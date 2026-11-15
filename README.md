@@ -412,37 +412,9 @@ The API defines how the different parts of the system communicate.
 
 It provides the interface between the frontend, backend and data services.
 
-Its purpose is to make the system modular: the frontend should not need to access internal database structures or understand the physical organization of the data repository.
-
-The API can expose operations such as:
-
-- Retrieve available missions.
-- Retrieve candidate landing locations.
-- Retrieve information associated with an LGRS cell.
-- Retrieve terrain and analysis attributes.
-- Retrieve illumination and communications results for a selected time or scenario.
-- Compare cell-level results between two times.
-- Submit and retrieve user annotations.
-
-The API should also define consistent data structures, field names, identifiers and validation rules.
-
-For example, using the same `cell_id` across the API, backend and data repository allows the different components to refer to the same spatial area without introducing separate location identifiers.
-
 ### 4.5 `deliverables`
 
-The deliverables repository contains the documentation and outputs associated with the project.
-
-It can include:
-
-- Technical documentation.
-- Architecture diagrams.
-- Project presentations.
-- Demonstration material.
-- Screenshots and visual explanations.
-- Hackathon deliverables.
-- Supporting reports and other project outputs.
-
-Its purpose is to preserve the project's technical and communication outputs independently from the application code.
+The deliverables repository contains the documentation and outputs associated with the project that has been delivered to the hackathon organization.
 
 ---
 
@@ -825,19 +797,7 @@ The result is intended to be more than a lunar map. It is a spatial information 
 
 ---
 
-## 10. Repository map
-
-| Repository | Main responsibility |
-|---|---|
-| `frontend` | Interactive application, 2D/3D visualization and user interaction |
-| `backend` | Application logic, data access and annotation handling |
-| `data` | Source datasets, processed geospatial data and precomputed results |
-| `api` | Interfaces, endpoints and shared data contracts |
-| `deliverables` | Documentation, presentations and project outputs |
-
-For repository-specific installation instructions, dependencies, environment variables and execution commands, refer to the README inside each repository.
-
-## 11. Terminology
+## 10. Terminology
 
 | Term | Meaning |
 |---|---|
